@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sticklemako.popularmovies.MovieDetailActivityFragment"
+    tools:showIn="@layout/activity_movie_detail"
+    android:background="@color/material_grey_50">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieTitle"
+            android:textSize="@dimen/movie_title_size"
+            android:gravity="center"
+            android:background="@color/material_blue_grey_800"
+            android:padding="@dimen/movie_title_padding"
+            android:textColor="@android:color/background_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:id="@+id/moviePosterThumbnail"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/movie_margins"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/movieOverview"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/movie_overview_padding"
+                android:textSize="@dimen/movie_overview_size"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/movie_margins"
+            android:text="@string/rel_date_label"
+            android:id="@+id/relDateLabel"
+            android:background="@color/material_blue_grey_800"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/movie_data_label_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/movie_margins"
+            android:text="@string/rel_date_label"
+            android:id="@+id/relDate"
+            android:textSize="@dimen/movie_data_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/movie_margins"
+            android:text="@string/rating_label"
+            android:id="@+id/ratingLabel"
+            android:background="@color/material_blue_grey_800"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/movie_data_label_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/movie_margins"
+            android:id="@+id/rating"
+            android:textSize="@dimen/movie_data_size" />
+
+    </LinearLayout>
+</ScrollView>
